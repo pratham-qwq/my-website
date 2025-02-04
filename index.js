@@ -9,7 +9,7 @@ const PREFIX = "Status: ";
 const ARTIST_LENGTH = 20;
 const SONG_LENGTH = 20;
 let lany = "https://api.lanyard.rest/v1/users/629518456126963716";
-$(function stat() {
+function stat() {
   $.getJSON(lany, (data) => {
     data = data.data;
     console.log(data);
@@ -49,4 +49,8 @@ $(function stat() {
       $("#status").html(`${PREFIX}Offline`);
     }
   });
-});
+}
+stat();
+setInterval(() => {
+  stat();
+}, 10000);
