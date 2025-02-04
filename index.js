@@ -8,7 +8,7 @@
 const PREFIX = "Status: ";
 const ARTIST_LENGTH = 20;
 const SONG_LENGTH = 20;
-//let lany = "https://api.lanyard.rest/v1/users/629518456126963716";
+let lany = "https://api.lanyard.rest/v1/users/629518456126963716";
 $(function stat() {
   $.getJSON(lany, (data) => {
     data = data.data;
