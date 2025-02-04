@@ -45,7 +45,7 @@ $(function stat() {
       $("#status").html(`${PREFIX}Online`);
     } else if (data.discord_status == "idle" || data.discord_status == "dnd") {
       $("#status").html(`${PREFIX}Idle`);
-    } else if (data.discord_status == "Offline") {
+    } else (data.discord_status == "Offline") {
       $("#status").html(`${PREFIX}Offline`);
     }
   });
