@@ -3,8 +3,19 @@ if (
   window.matchMedia("(prefers-color-scheme: dark)").matches
 ) {
   document.getElementById("theme").innerHTML =
-    '<link id="theme" rel="stylesheet" href="dark.css" type="text/css">';
+    '<link id="theme" rel="stylesheet" href="/dark.css" type="text/css">';
 }
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (event) => {
+    const newColorScheme = event.matches ? "dark" : "light";
+    if (newColorScheme == "dark")
+      document.getElementById("theme").innerHTML =
+        '<link id="theme" rel="stylesheet" href="/dark.css" type="text/css">';
+    else if (newColorScheme == "light")
+      document.getElementById("theme").innerHTML =
+        '<link id="theme" rel="stylesheet" href="/light.css" type="text/css">';
+  });
 const PREFIX = "Status: ";
 const ARTIST_LENGTH = 20;
 const SONG_LENGTH = 20;
