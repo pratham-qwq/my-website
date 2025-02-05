@@ -9,8 +9,6 @@ body {
   line-height: 1.35;
   max-width: 90rem;
   margin: auto;
-  color: #d9d8dc;
-  background-color: #120c0e;
   padding: 30px;
   padding-top: 75px;
 }
@@ -60,17 +58,6 @@ sup {
   font-size: 75%;
 }
 
-hr {
-  border-color: #eb99a1;
-}
-
-a {
-  text-decoration: none;
-  color: #eb99a1;
-}
-u {
-  color: #eb99a1;
-}
 .nav {
   font-size: 15px;
   list-style-type: none;

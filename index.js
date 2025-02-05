@@ -1,10 +1,10 @@
-/*if (
+if (
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches
 ) {
   document.getElementById("theme").innerHTML =
-    '<link id="theme" rel="stylesheet" href="sakura-vader.css" type="text/css">';
-}*/
+    '<link id="theme" rel="stylesheet" href="dark.css" type="text/css">';
+}
 const PREFIX = "Status: ";
 const ARTIST_LENGTH = 20;
 const SONG_LENGTH = 20;
